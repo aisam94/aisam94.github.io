@@ -13,6 +13,10 @@
   color: var(--white);
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 main {
   margin: 0 3em 0 3em;
 }
@@ -125,18 +129,11 @@ section {
   margin-bottom: 1em;
 }
 
-.project-excerpt {
-}
-
 .project-box {
   display: flex;
   flex-direction: column;
   width: max-content;
   margin: 1em;
-}
-
-.contact-container div {
-  /* margin-bottom: 1rem; */
 }
 
 .contact-item {

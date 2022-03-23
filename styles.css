@@ -225,8 +225,8 @@ footer {
 
 @media screen and (max-width: 640px) {
   .project-img {
-    width: calc(360px * 2 / 3);
-    height: calc(200px * 2 / 3);
+    width: calc(360px * 4 / 5);
+    height: calc(200px * 4 / 5);
   }
 }
 

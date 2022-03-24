@@ -69,7 +69,9 @@ nav a:hover {
 
 p {
   margin: 1em 0 1em 0;
-  line-height: 2em;
+  line-height: 2rem;
+  text-indent: 4rem;
+  text-align: justify;
 }
 
 section {
@@ -174,7 +176,8 @@ footer {
 .icon-container {
   display: flex;
   flex-wrap: wrap;
-  padding: 0.5 em;
+  padding: 0.5 rem;
+  justify-content: center;
 }
 
 .icon-container img {
@@ -195,6 +198,10 @@ footer {
 }
 
 @media screen and (max-width: 767px) {
+  p {
+    text-indent: 2rem;
+  }
+
   main {
     margin: 0 0.5em;
   }
@@ -232,4 +239,8 @@ footer {
 
 .github-link {
   text-decoration: none;
+}
+
+a:hover {
+  color: var(--yellow);
 }

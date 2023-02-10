@@ -1,0 +1,25 @@
+---
+export interface Props {
+  title: string;
+  href: string;
+  img: string;
+  stack: string;
+  description: string;
+}
+
+const { title, href, img, stack, description } = Astro.props;
+---
+
+<div class="project-box">
+  <span class="project-item-title">{title}</span>
+  <div class="img-container">
+    <img class="project-img" src={img} alt="Image" />
+    <div class="project-middle">
+      <span class="project-stack project-text">{stack}</span>
+      <span class="project-excerpt project-text">{description}</span>
+      <a href={href}>Link</a>
+    </div>
+  </div>
+</div>
+
+<style></style>

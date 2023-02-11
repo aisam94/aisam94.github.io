@@ -12,12 +12,9 @@ const { title } = Astro.props;
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width" />
     <meta name="generator" content={Astro.generator} />
+    <meta name="description" content="A portfolio by Aisamuddin" />
     <title>Portfolio</title>
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.14.0/devicon.min.css"
-    />
-    <link href="./public/favicon.svg" rel="shortcut icon" />
+    <link href="/favicon.svg" rel="shortcut icon" />
   </head>
   <body>
     <slot />
@@ -126,8 +123,10 @@ const { title } = Astro.props;
   }
 
   .project-container {
-    display: flex;
-    flex-wrap: wrap;
+    /* display: flex;
+    flex-wrap: wrap; */
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 
   .project-item-title {
@@ -153,7 +152,8 @@ const { title } = Astro.props;
   }
 
   .project-img {
-    width: 360px;
+    /* width: 360px; */
+    width: 393px;
     height: 200px;
   }
 
@@ -170,7 +170,9 @@ const { title } = Astro.props;
     display: flex;
     flex-direction: column;
     width: max-content;
-    margin: 1em;
+    margin-top: 2rem;
+    margin-right: auto;
+    margin-left: auto;
   }
 
   .contact-item {
@@ -274,5 +276,11 @@ const { title } = Astro.props;
 
   .link-icons {
     fill: white;
+  }
+
+  .page-width-container{
+    max-width: 1100px;
+    margin-right: auto;
+    margin-left: auto;
   }
 </style>

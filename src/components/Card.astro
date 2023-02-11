@@ -13,7 +13,7 @@ const { title, href, img, stack, description } = Astro.props;
 <div class="project-box">
   <span class="project-item-title">{title}</span>
   <div class="img-container">
-    <img class="project-img" src={img} alt="Image" />
+    <img class="project-img" src={img} alt={title.toLowerCase()} />
     <div class="project-middle">
       <span class="project-stack project-text">{stack}</span>
       <span class="project-excerpt project-text">{description}</span>

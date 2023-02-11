@@ -6,10 +6,10 @@ import Skills from "../components/Skills.astro";
 
 <Layout title="Welcome to Astro.">
   <main>
-    <h1 class="name-title">MUHAMMAD A'ISAMUDDIN</h1>
+    <h1 class="name-title page-width-container">MUHAMMAD A'ISAMUDDIN</h1>
     <!-- Header -->
     <header>
-      <nav>
+      <nav class="page-width-container">
         <a href="#about">ABOUT ME</a>
         <a href="#skills"> SKILLS</a>
         <a href="#projects">PROJECTS</a>
@@ -17,7 +17,7 @@ import Skills from "../components/Skills.astro";
       </nav>
     </header>
     <!-- About -->
-    <section id="about">
+    <section id="about" class="page-width-container">
       <h2 class="subtitle">About Me</h2>
       <p>
         Hello there! The name is Muhammad A'isamuddin bin Johari. I am a
@@ -28,12 +28,12 @@ import Skills from "../components/Skills.astro";
       </p>
     </section>
     <!-- Skills -->
-    <section id="skills">
+    <section id="skills" class="page-width-container">
       <h2 class="subtitle">Skills</h2>
       <Skills />
     </section>
     <!-- Projects -->
-    <section id="projects">
+    <section id="projects" class="page-width-container">
       <h2 class="subtitle">Projects</h2>
       <div class="project-container">
         <Card
@@ -70,17 +70,17 @@ import Skills from "../components/Skills.astro";
       </div>
     </section>
     <!-- Contact Information -->
-    <section id="contacts">
+    <section id="contacts" class="page-width-container">
       <h2 class="subtitle">Contact Information and Other Links</h2>
       <div class="contact-item">
-        <img class="icon" src="/assets/icons/email-plain.svg"/>
+        <img class="icon" src="/assets/icons/email-plain.svg" alt="email" />
         <div class="contact-item-info">
           <h3>Email</h3>
           <span>aisam0094@gmail.com</span>
         </div>
       </div>
       <div class="contact-item">
-        <img class="icon" src="/assets/icons/phone-plain.svg"/>
+        <img class="icon" src="/assets/icons/phone-plain.svg" alt="phone" />
         <div class="contact-item-info">
           <h3>Phone Number</h3>
           <span>+60127042003</span>
@@ -90,6 +90,7 @@ import Skills from "../components/Skills.astro";
         <img
           class="icon"
           src="/assets/icons/github-original.svg"
+          alt="github"
         />
         <div class="contact-item-info">
           <h3>Github Link</h3>
@@ -104,11 +105,14 @@ import Skills from "../components/Skills.astro";
         <img
           class="icon"
           src="/assets/icons/linkedin-plain.svg"
+          alt="linkedin"
         />
         <div class="contact-item-info">
           <h3>LinkedIn Link</h3>
           <span
-            ><a class="github-link" href="https://www.linkedin.com/in/muhammad-aisamuddin-bin-johari/"
+            ><a
+              class="github-link"
+              href="https://www.linkedin.com/in/muhammad-aisamuddin-bin-johari/"
               >https://www.linkedin.com/in/muhammad-aisamuddin-bin-johari/</a
             ></span
           >
@@ -117,7 +121,7 @@ import Skills from "../components/Skills.astro";
     </section>
   </main>
   <!-- Footer -->
-  <footer>&copy 2023 by Muhammad A'isamuddin Bin Johari</footer>
+  <footer class="page-width-container">&copy 2023 by Muhammad A'isamuddin Bin Johari</footer>
 </Layout>
 
 <style></style>

@@ -200,10 +200,9 @@ const { title } = Astro.props;
   }
 
   .icon-container {
-    display: flex;
-    flex-wrap: wrap;
-    padding: 0.5 rem;
-    justify-content: center;
+    display: grid;
+    grid-template-columns: repeat(6, minmax(0, 1fr));
+    margin: 0 10rem 0 10rem;
   }
 
   .icon-container img {
@@ -214,6 +213,7 @@ const { title } = Astro.props;
 
   .icon-container img:hover {
     transform: scale(1.7);
+    transition: 100ms linear;
   }
 
   .icon-box {

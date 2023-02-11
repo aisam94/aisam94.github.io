@@ -152,7 +152,6 @@ const { title } = Astro.props;
   }
 
   .project-img {
-    /* width: 360px; */
     width: 393px;
     height: 200px;
   }
@@ -168,6 +167,8 @@ const { title } = Astro.props;
 
   .project-box {
     display: flex;
+    justify-content: center;
+    align-items: center;
     flex-direction: column;
     width: max-content;
     margin-top: 2rem;
@@ -227,8 +228,10 @@ const { title } = Astro.props;
   }
 
   @media screen and (max-width: 767px) {
-    p {
+    #about p {
       text-indent: 2rem;
+      font-size: 0.8rem;
+      line-height: 1.2rem;
     }
 
     main {
@@ -254,15 +257,28 @@ const { title } = Astro.props;
     }
 
     .project-container {
-      flex-direction: column;
-      align-items: center;
+      grid-template-columns: repeat(1, minmax(0, 1fr));
+    }
+
+    .icon-container {
+      grid-template-columns: repeat(4, minmax(0, 1fr));
+      margin: 0;
+    }
+
+    .project-middle {
+      padding: 0;
+      font-size: 0.8rem;
+    }
+
+    .img-container {
+      display: flex;
     }
   }
 
   @media screen and (max-width: 640px) {
     .project-img {
-      width: calc(360px * 4 / 5);
-      height: calc(200px * 4 / 5);
+      width: calc(393px * 3 / 5);
+      height: calc(200px * 3 / 5);
     }
   }
 
@@ -278,7 +294,7 @@ const { title } = Astro.props;
     fill: white;
   }
 
-  .page-width-container{
+  .page-width-container {
     max-width: 1100px;
     margin-right: auto;
     margin-left: auto;

@@ -130,8 +130,16 @@ import Skills from "../components/Skills.astro";
   </main>
   <!-- Footer -->
   <footer class="page-width-container">
-    &copy 2023 by Muhammad A'isamuddin Bin Johari
+    &copy; &nbsp;<span id="current_year"></span>&nbsp; by Muhammad A'isamuddin Bin Johari
   </footer>
 </Layout>
 
 <style></style>
+
+<script>
+  const currentYearElement = document.getElementById("current_year");
+
+  if (currentYearElement) {
+    currentYearElement.textContent = new Date().getFullYear().toString();
+  }
+</script>
